@@ -40,7 +40,7 @@ For all the features and details, please read the [API reference][docs].
 var input = 'Peter Piper picked a peck of pickled peppers.';
 
 re(/p\w+/i).each(input, function (matches) {
-    console.log(matches[0]); // logs words starting with a "p"
+    console.log(matches[0]);
 });
 ```
 Note that above example does not have a `g` flag (for global) in the `RegExp`. But logically; since you're calling `each()` it should search for all. So `re` automatically fixes it for you.
