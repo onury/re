@@ -1,0 +1,57 @@
+{
+  "name": "re.js",
+  "version": "1.0.0",
+  "description": "JS RegExp API for Humans!",
+  "author": "Onur Yıldırım <onur@cutepilot.com>",
+  "license": "MIT",
+  "main": "dist/re.js",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/onury/re#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onury/re.git"
+  },
+  "bugs": {
+    "url": "https://github.com/onury/re/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "re",
+    "regular",
+    "expressions",
+    "regex",
+    "regexp",
+    "pattern",
+    "exec",
+    "test",
+    "match",
+    "find",
+    "search",
+    "first",
+    "last",
+    "index",
+    "string",
+    "manipulation"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "eslint": "^2.9.0",
+    "eslint-config-xo": "^0.14.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-docma": "^0.6.4",
+    "grunt-jasmine-nodejs": "^1.5.3",
+    "grunt-webpack": "^1.0.14",
+    "matchdep": "^1.0.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
