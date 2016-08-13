@@ -1,0 +1,36 @@
+{
+  "name": "re.js",
+  "description": "JS RegExp API for Humans!",
+  "main": "dist/re.min.js",
+  "authors": [
+    "Onur Yıldırım <onur@cutepilot.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "re",
+    "regular",
+    "expressions",
+    "regex",
+    "regexp",
+    "pattern",
+    "exec",
+    "test",
+    "match",
+    "find",
+    "search",
+    "first",
+    "last",
+    "index",
+    "string",
+    "manipulation"
+  ],
+  "homepage": "https://github.com/onury/re",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "backup"
+  ]
+}
