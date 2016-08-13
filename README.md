@@ -4,21 +4,9 @@
 
 ### `RegExp` API for Humans!  
 
-- `.match()`, `.exec()`, `.search()`, `.test()`...  
-Which method belongs to what prototype? `RegExp` vs `String`..
-- Why do you "sometimes" run into infinite loops with `.exec()` in a `while` condition?
-- When should you set the `g` (global) flag?
-- What is `.lastIndex` really for? When should you set it?
-- Is there an easy way to get all the matches and/or indices at once via `RegExp`?
-- What?! I have to call `.exec()` repeatedly?
-
-EcmaScript Regular Expressions specification is powerful but a bit confusing, right?
-
 For example, if you place regular expression literal or `RegExp` constructor within a `while` condition, you'll hit an infinite loop if there is a match! (Because the `RegExp` instance is re-initiated every time; which resets `lastIndex` to `0`).
 
-Or if you forget the `global` flag for a `RegExp#exec()` call in a `while` condition; you'll again, hit an inifite loop!
-
-..
+Or if you forget the `global` flag for a `RegExp#exec()` call in a `while` condition; you'll again, hit an infinite loop!
 
 `re` will save you from all the weirdness!  
 
