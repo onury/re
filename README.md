@@ -10,14 +10,10 @@ Or if you forget the `global` flag for a `RegExp#exec()` call in a `while` condi
 
 `re` will save you from all the weirdness!  
 
-## Features
-
 - Friendly API!
-- Supports both browser and Node
-- Universal module
+- Universal module (Browser/Node/CommonJS/AMD)
 - Small size. Only **1.5 KB** minified, gzipped.
 - Well [documented][docs].
-
 
 ## Installation
 
