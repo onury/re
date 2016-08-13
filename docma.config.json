@@ -63,8 +63,8 @@
                         //     "target": "_blank"
                         // },
                         // { "separator": true },
-                        { "label": "<code>npm install re</code>" },
-                        // { "label": "<code>bower install re</code>" },
+                        { "label": "<code>npm install re.js</code>" },
+                        { "label": "<code>bower install re.js</code>" },
                         { "separator": true },
                         {
                             "label": "Download as Archive",
