@@ -33,9 +33,13 @@ Or if you forget the `global` flag for a `RegExp#exec()` call in a `while` condi
 
 ## Installation
 
-Install via NPM:
+Install via **NPM**:
 ```sh
 npm i re.js
+```
+Install via **Bower**:
+```sh
+bower install re.js
 ```
 
 ## Usage
