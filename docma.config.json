@@ -29,7 +29,7 @@
         "title": "re.js",
         "meta": null,
         "base": "/re",
-        "entrance": "api",
+        "entrance": "content:guide",
         "routing": "query",
         "server": "github"
     },
