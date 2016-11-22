@@ -1,5 +1,6 @@
 /backup/
 /node_modules/
+_SpecRunner.html
 npm-debug.log
 tmp
 TODO.md

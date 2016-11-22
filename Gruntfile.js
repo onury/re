@@ -18,6 +18,7 @@ module.exports = function (grunt) {
         //  CONFIGURE TASKS
         // ----------------------------
 
+        // for node tests
         'jasmine_nodejs': {
             options: {
                 specNameSuffix: 'spec.js',
@@ -31,7 +32,7 @@ module.exports = function (grunt) {
                 reporters: {
                     console: {
                         colors: true,
-                        cleanStack: 1,
+                        cleanStack: 3,
                         verbosity: 4,
                         listStyle: 'indent',
                         activity: false
@@ -40,6 +41,20 @@ module.exports = function (grunt) {
             },
             all: {
                 specs: ['./test/**/*.spec.js']
+            }
+        },
+
+        // for browser tests
+        // see _SpecRunner.html file after tests are run
+        'jasmine': {
+            test: {
+                src: './dist/re.min.js',
+                options: {
+                    // Prevents the auto-generated specfile used to run your
+                    // tests from being automatically deleted.
+                    keepRunner: true,
+                    specs: './test/re.spec.js'
+                }
             }
         },
 
@@ -56,7 +71,7 @@ module.exports = function (grunt) {
             all: {
                 files: [
                     './src/*.js',
-                    './test/**/*.spec.js'
+                    './test/*.spec.js'
                 ],
                 tasks: ['jasmine_nodejs']
             }
@@ -73,7 +88,9 @@ module.exports = function (grunt) {
     //  REGISTER TASKS
     // ----------------------------
 
-    grunt.registerTask('test', ['jasmine_nodejs']);
+    grunt.registerTask('node-test', ['webpack:min', 'jasmine_nodejs']);
+    grunt.registerTask('browser-test', ['webpack:min', 'jasmine']);
+    grunt.registerTask('test', ['webpack:min', 'jasmine_nodejs', 'jasmine']);
     grunt.registerTask('build', ['webpack:full', 'webpack:min']);
     grunt.registerTask('release', ['build', 'docma']);
     grunt.registerTask('default', ['webpack:full', 'test']);
