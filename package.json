@@ -1,7 +1,7 @@
 {
   "name": "re.js",
   "version": "1.0.0",
-  "description": "JS RegExp API for Humans!",
+  "description": "RegExp API for Humans!",
   "author": "Onur Yıldırım <onur@cutepilot.com>",
   "license": "MIT",
   "main": "dist/re.js",
@@ -22,6 +22,7 @@
   },
   "keywords": [
     "re",
+    "rejs",
     "regular",
     "expressions",
     "regex",
@@ -36,22 +37,24 @@
     "last",
     "index",
     "string",
+    "text",
     "manipulation"
   ],
   "devDependencies": {
-    "babel-core": "^6.13.2",
-    "babel-eslint": "^6.1.2",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.13.2",
-    "eslint": "^2.9.0",
-    "eslint-config-xo": "^0.14.1",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.10.2",
+    "eslint-config-xo": "^0.17.0",
     "grunt": "^1.0.1",
+    "grunt-contrib-jasmine": "^1.0.3",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-docma": "^0.6.4",
-    "grunt-jasmine-nodejs": "^1.5.3",
-    "grunt-webpack": "^1.0.14",
+    "grunt-docma": "^0.6.5",
+    "grunt-jasmine-nodejs": "^1.5.4",
+    "grunt-webpack": "^1.0.18",
     "matchdep": "^1.0.1",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   }
 }
