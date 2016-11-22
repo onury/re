@@ -1,16 +1,16 @@
 # re.js
 
+![npm](https://img.shields.io/npm/v/re.js.svg)
+![release](https://img.shields.io/github/release/onury/re.svg)
+![dependencies](https://david-dm.org/onury/re.svg)
+![license](http://img.shields.io/npm/l/re.svg)
+![maintained](https://img.shields.io/maintenance/yes/2016.svg)
+
 > © 2016, Onur Yıldırım (@onury). MIT License.  
 
 ### `RegExp` API for Humans!  
 
-For example, if you place regular expression literal or `RegExp` constructor within a `while` condition, you'll hit an infinite loop if there is a match! (Because the `RegExp` instance is re-initiated every time; which resets `lastIndex` to `0`).
-
-Or if you forget the `global` flag for a `RegExp#exec()` call in a `while` condition; you'll again, hit an infinite loop!
-
-`re` will save you from all the weirdness!  
-
-- Friendly API!
+- Friendly API! e.g. `re(pattern).each(input, callback)`
 - Universal module (Browser/Node/CommonJS/AMD)
 - Small size. Only **1.5 KB** minified, gzipped.
 - Well [documented][docs].
@@ -27,12 +27,10 @@ bower install re.js
 ```
 
 ## Usage
-
+For all the features and details, please read the [**API reference**][docs].
 ```js
 const re = require('re.js');
 ```
-
-For all the features and details, please read the [API reference][docs].
 
 ### `.each()`
 
@@ -51,7 +49,7 @@ Iterate from last match to first.
 ```js
 re(/p\w+/i).eachRight(input, function (matches, index) {
     if (matches[0] === 'peck') {
-        console.log('exiting @', index); // —> exiting @ 2
+        console.log('exiting @', index); // —> exiting @ 3
         // return early, no more iterations..
         return false;
     }
@@ -97,12 +95,12 @@ re(/p\w+/i)
 ```
 
 ### `.test()`
-
+for convenience...
 ```js
 re(/p\w+/i).test(input); // —> true
 ```
 
-### Match Index
+### Match Indices
 
 ```js
 re(/p\w+/i).first(input)[0];        // —> "Peter"
@@ -121,10 +119,22 @@ re(/p\w+/i).nth(input, 3)[0];       // —> "picked"
 
 re(/p\w+/i).indices(input);         // —> [ 0, 6, 12, 21, 29, 37 ]
 ```
-See [all methods and features][docs].
+
+## Documentation
+
+See [**all methods and features**][docs].
 
 [docs]:https://onury.github.io/re/?api=re
 
+## Change Log
+
+- v**1.1.0**
+    + `.eachRight()` callback parameter `index` is now reversed. (last iteration index will be `0`.)
+    + Added `.eachInverse()` method for iterating over non-matched blocks. #experimental
+    + Added extra argument to callbacks for convenience: `charIndex` (same as `matches.index`).
+
+- v**1.0.0**
+    + Initial release.
 
 ## License
 
