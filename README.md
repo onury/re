@@ -4,7 +4,7 @@
 ![release](https://img.shields.io/github/release/onury/re.svg)
 ![dependencies](https://david-dm.org/onury/re.svg)
 ![license](http://img.shields.io/npm/l/re.svg)
-![maintained](https://img.shields.io/maintenance/yes/2016.svg)
+![maintained](https://img.shields.io/maintenance/yes/2017.svg)
 
 > © 2016, Onur Yıldırım (@onury). MIT License.  
 
