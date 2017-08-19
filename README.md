@@ -1,12 +1,12 @@
 # re.js
 
-![npm](https://img.shields.io/npm/v/re.js.svg)
-![release](https://img.shields.io/github/release/onury/re.svg)
-![dependencies](https://david-dm.org/onury/re.svg)
-![license](http://img.shields.io/npm/l/re.svg)
-![maintained](https://img.shields.io/maintenance/yes/2017.svg)
+[![npm](http://img.shields.io/npm/v/re.js.svg)](https://www.npmjs.com/package/re.js)
+[![release](https://img.shields.io/github/release/onury/re.svg)](https://github.com/onury/re)
+[![dependencies](https://david-dm.org/onury/re.svg)](https://david-dm.org/onury/re)
+[![license](http://img.shields.io/npm/l/re.svg)](https://github.com/onury/re/blob/master/LICENSE)
+[![maintained](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/onury/re/graphs/commit-activity)  
 
-> © 2016, Onur Yıldırım (@onury). MIT License.  
+> © 2017, Onur Yıldırım ([@onury](https://github.com/onury)). MIT License.
 
 ### `RegExp` API for Humans!  
 
