@@ -4,9 +4,9 @@
 [![release](https://img.shields.io/github/release/onury/re.svg)](https://github.com/onury/re)
 [![dependencies](https://david-dm.org/onury/re.svg)](https://david-dm.org/onury/re)
 [![license](http://img.shields.io/npm/l/re.svg)](https://github.com/onury/re/blob/master/LICENSE)
-[![maintained](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/onury/re/graphs/commit-activity)  
+[![maintained](https://img.shields.io/maintenance/yes/2019.svg)](https://github.com/onury/re/graphs/commit-activity)  
 
-> © 2018, Onur Yıldırım ([@onury](https://github.com/onury)). MIT License.
+> © 2019, Onur Yıldırım ([@onury](https://github.com/onury)). MIT License.
 
 ### `RegExp` API for Humans!  
 
